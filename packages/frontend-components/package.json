@@ -1,0 +1,21 @@
+{
+  "name": "@frontend-monorepo/components",
+  "version": "0.0.0",
+  "description": "A set of ui components for frontend monorepo template.",
+  "author": "zzuu666 <zzuu666@outlook.com>",
+  "homepage": "https://github.com/zzuu666/frontend-monorepo#readme",
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://registry.yarnpkg.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zzuu666/frontend-monorepo.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/zzuu666/frontend-monorepo/issues"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "name": "frontend-monorepo",
+  "version": "0.0.0",
+  "description": "Monorepo template for frontend.",
+  "repository": "git@github.com:zzuu666/frontend-monorepo.git",
+  "author": "zzuu666 <zzuu666@outlook.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "applications/*"
+  ],
+  "scripts": {
+    "start": "yarn storybook",
+    "storybook": "start-storybook -p 3153",
+    "build:storybook": "build-storybook -c .storybook -o .out"
+  },
+  "devDependencies": {
+    "@storybook/addon-docs": "^6.0.21",
+    "@storybook/react": "^6.0.21",
+    "@typescript-eslint/eslint-plugin": "^4.1.1",
+    "@typescript-eslint/parser": "^4.1.1",
+    "css-loader": "^4.3.0",
+    "eslint": "^7.9.0",
+    "eslint-config-alloy": "^3.8.0",
+    "eslint-plugin-monorepo-cop": "^1.0.2",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react-hooks": "^4.1.2",
+    "husky": "^4.3.0",
+    "lerna": "^3.22.1",
+    "less": "^3.12.2",
+    "less-loader": "^7.0.1",
+    "lint-staged": "^10.4.0",
+    "prettier": "2.1.2",
+    "style-loader": "^1.2.1",
+    "typescript": "^4.0.2"
+  },
+  "resolutions": {
+    "prettier": "2.1.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "packages/**/*.{js,ts,jsx,tsx}": [
+      "prettier --write",
+      "eslint"
+    ],
+    "packages/**/*.{json, md}": [
+      "prettier --write"
+    ]
+  }
+}

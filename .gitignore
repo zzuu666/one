@@ -1,0 +1,16 @@
+.DS_Store
+build
+node_modules
+dist
+output
+package-lock.json
+yarn-error.log
+# storybook output
+.out
+.awcache
+.idea
+.cache
+.yarn
+typings-vs
+typings
+

@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "esnext"],
+    "importHelpers": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "downlevelIteration": true,
+    "moduleResolution": "node",
+    "jsx": "react",
+    "esModuleInterop": true,
+    "noEmit": true,
+    "rootDir": ".",
+    "baseUrl": ".",
+    "skipLibCheck": true
+  },
+  "include": ["packages"],
+  "exclude": ["node_modules", "dist", "**/dist"]
+}
