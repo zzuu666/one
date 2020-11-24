@@ -6,10 +6,13 @@
   "author": "zzuu666 <zzuu666@outlook.com>",
   "license": "MIT",
   "private": true,
-  "workspaces": [
-    "packages/*",
-    "applications/*"
-  ],
+  "workspaces": {
+    "packages": [
+      "packages/*",
+      "applications/*"
+    ],
+    "nohoist": ["next"]
+  },
   "scripts": {
     "start": "yarn storybook",
     "storybook": "start-storybook -p 3153",

@@ -1,0 +1,12 @@
+{
+  "name": "one-ui",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "zzuu666",
+  "license": "MIT",
+  "private": true,
+  "scripts": {},
+  "peerDependencies": {
+    "tailwindcss": "^2.0.1"
+  }
+}
