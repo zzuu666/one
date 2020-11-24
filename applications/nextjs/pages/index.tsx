@@ -1,5 +1,7 @@
 import React from 'react'
 import { Input, Card } from '../components'
+import { Swiper, SwiperSlide } from 'swiper/react'
+
 
 function HomePage() {
   return (
@@ -15,8 +17,13 @@ function HomePage() {
         </div>
       </div>
       <div className="col-span-4 grid-rows-none h-screen overflow-auto">
-        <div className="grid grid-cols-3 grid-cols-r-3-1 gap-4">
-          <Card className="w-full" />
+        <div className="grid grid-cols-r-3-1 gap-4">
+          <Card className="w-full overflow-hidden">
+              <Swiper className="w-full h-full">
+                  <SwiperSlide>1</SwiperSlide>
+                  <SwiperSlide>2</SwiperSlide>
+              </Swiper>
+          </Card>
           <Card className="w-full">
             <div className="w-full pb-p100" />
           </Card>

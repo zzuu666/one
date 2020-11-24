@@ -11,7 +11,7 @@
       "packages/*",
       "applications/*"
     ],
-    "nohoist": ["next"]
+    "nohoist": ["**/next", "**/swiper"]
   },
   "scripts": {
     "start": "yarn storybook",
